@@ -1,1 +1,73 @@
+<html>
+<head>
+  <title>Secure Code Assessment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+  <div class="container">
+
+    <h1>🔐 Secure Code Assessment</h1>
+    <p>Simple Login Security Testing</p>
+
+    <div class="login-box">
+
+      <h2>Login</h2>
+
+      <input type="text" id="username" placeholder="Username">
+
+      <input type="password" id="password" placeholder="Password">
+
+      <button onclick="login()">Login</button>
+
+      <p id="result"></p>
+
+    </div>
+
+<div class="security-box">
+
+  <h2>🛡️ Security Assessment</h2>
+
+  <div class="issue">
+    <h3>⚠️ 1. Hard-coded Credentials</h3>
+    <p>
+      Username and password are directly written in the JavaScript code.
+    </p>
+    <strong>Risk:</strong> Credentials can be exposed if the source code is accessed.
+    <p><b>Fix:</b> Store credentials securely and avoid hard-coding them.</p>
+  </div>
+
+  <div class="issue">
+    <h3>⚠️ 2. Weak Password</h3>
+    <p>
+      A simple password such as <b>admin123</b> is easy to guess.
+    </p>
+    <strong>Risk:</strong> Attackers may guess weak passwords.
+    <p><b>Fix:</b> Use strong passwords with a proper password policy.</p>
+  </div>
+
+  <div class="issue">
+    <h3>⚠️ 3. Insecure Password Handling</h3>
+    <p>
+      The password is compared directly in client-side JavaScript.
+    </p>
+    <strong>Risk:</strong> Users can inspect the source code and see the login logic.
+    <p><b>Fix:</b> Perform authentication on a secure server and use password hashing.</p>
+  </div>
+
+  <div class="secure-result">
+    <h3>✅ Security Recommendation</h3>
+    <p>
+      Use secure authentication, strong passwords, server-side validation,
+      and password hashing to improve application security.
+    </p>
+  </div>
+
+</div>
+      
+
+  <script src="script.js"></script>
+
+</body>
+</html>

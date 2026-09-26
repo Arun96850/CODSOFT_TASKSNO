@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef3f8;
+  margin: 0;
+  padding: 30px 15px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #17365d;
+}
+
+.container > p {
+  text-align: center;
+}
+
+.login-box,
+.security-box {
+  background: white;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px #bbb;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #17365d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #28588f;
+}
+
+#result {
+  text-align: center;
+  font-weight: bold;
+}
+
+.security-box h2 {
+  color: #17365d;
+}
+
+.security-box h3 {
+  margin-top: 20px;
+}
+.issue {
+  background: #f7f9fc;
+  padding: 15px;
+  margin-top: 15px;
+  border-left: 5px solid #e67e22;
+  border-radius: 6px;
+}
+
+.issue h3 {
+  color: #c0392b;
+}
+
+.secure-result {
+  background: #eaf7ee;
+  padding: 15px;
+  margin-top: 20px;
+  border-left: 5px solid #27ae60;
+  border-radius: 6px;
+}
+
+.secure-result h3 {
+  color: #218838;
+}
