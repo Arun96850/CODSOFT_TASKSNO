@@ -1,87 +1,73 @@
 <html>
 <head>
-  <title>Phishing Awareness</title>
+  <title>Secure Code Assessment</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
-  <h2>🛡️ PhishGuard</h2>
 
-  <div class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#quiz">Quiz</a>
-    <a href="#safety">Safety Tips</a>
+  <div class="container">
+
+    <h1>🔐 Secure Code Assessment</h1>
+    <p>Simple Login Security Testing</p>
+
+    <div class="login-box">
+
+      <h2>Login</h2>
+
+      <input type="text" id="username" placeholder="Username">
+
+      <input type="password" id="password" placeholder="Password">
+
+      <button onclick="login()">Login</button>
+
+      <p id="result"></p>
+
+    </div>
+
+<div class="security-box">
+
+  <h2>🛡️ Security Assessment</h2>
+
+  <div class="issue">
+    <h3>⚠️ 1. Hard-coded Credentials</h3>
+    <p>
+      Username and password are directly written in the JavaScript code.
+    </p>
+    <strong>Risk:</strong> Credentials can be exposed if the source code is accessed.
+    <p><b>Fix:</b> Store credentials securely and avoid hard-coding them.</p>
   </div>
 
-
-  <h1 id="home">🛡️ Phishing Awareness</h1>
-  <p>Stay Safe From Online Scams</p>
-
-  <h2>What is Phishing?</h2>
-  <p>
-    Phishing is a cyber attack where attackers
-    trick users into sharing sensitive information.
-  </p>
-<section id="safety" class="safety-tips">
-  <h2>🛡️ Phishing Safety Tips</h2>
-
-  <div class="tip-card">
-    <h3>🔗 Check Links</h3>
-    <p>Check the website URL before clicking.</p>
+  <div class="issue">
+    <h3>⚠️ 2. Weak Password</h3>
+    <p>
+      A simple password such as <b>admin123</b> is easy to guess.
+    </p>
+    <strong>Risk:</strong> Attackers may guess weak passwords.
+    <p><b>Fix:</b> Use strong passwords with a proper password policy.</p>
   </div>
 
-  <div class="tip-card">
-    <h3>📧 Verify Emails</h3>
-    <p>Verify emails from unknown senders.</p>
+  <div class="issue">
+    <h3>⚠️ 3. Insecure Password Handling</h3>
+    <p>
+      The password is compared directly in client-side JavaScript.
+    </p>
+    <strong>Risk:</strong> Users can inspect the source code and see the login logic.
+    <p><b>Fix:</b> Perform authentication on a secure server and use password hashing.</p>
   </div>
 
-  <div class="tip-card">
-    <h3>🔐 Never Share OTP</h3>
-    <p>Never share your OTP or password with anyone.</p>
+  <div class="secure-result">
+    <h3>✅ Security Recommendation</h3>
+    <p>
+      Use secure authentication, strong passwords, server-side validation,
+      and password hashing to improve application security.
+    </p>
   </div>
 
-  <div class="tip-card">
-    <h3>⚠️ Beware of Urgent Messages</h3>
-    <p>Carefully verify links in urgent messages.</p>
-  </div>
-
-  <div class="tip-card">
-    <h3>🛡️ Use Strong Security</h3>
-    <p>Use strong passwords and enable MFA.</p>
-  </div>
-
-  <div class="tip-card">
-    <h3>🚫 Report Suspicious Activity</h3>
-    <p>Report suspicious emails or websites.</p>
-  </div>
-</section>
-
-<section id="quiz" class="quiz">
-  <h2>🧠 Phishing Awareness Quiz</h2>
-
-  <p id="question">
-    Loading question...
-  </p>
-
-  <div id="options"></div>
-
-  <p id="result"></p>
-
-  <button id="nextBtn" onclick="nextQuestion()">
-    Next Question
-  </button>
-
-  <p id="score"></p>
-  
-  <div class="progress-container">
-  <div id="progressBar"></div>
 </div>
-<p id="progressText">Question 1 of 3</p>
-</section>
-<script src="script.js"></script>
-<footer class="footer">
-  <p>🛡️ PhishGuard | Phishing Awareness Website</p>
-  <p>Stay Alert • Stay Safe Online</p>
-</footer>
-</body> 
+      
+
+  <script src="script.js"></script>
+
+</body>
 </html>
