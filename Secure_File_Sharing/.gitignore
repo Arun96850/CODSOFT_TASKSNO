@@ -1,0 +1,6 @@
+secret.key
+temp_download
+uploads/
+__pycache__/
+*.pyc
+
